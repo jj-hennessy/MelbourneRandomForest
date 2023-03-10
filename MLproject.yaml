@@ -1,0 +1,7 @@
+name: melbourne-housing-prices
+python_env: python_env.yaml
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 200}
+    command: "python train.py {n_estimators}"
